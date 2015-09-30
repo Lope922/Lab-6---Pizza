@@ -35,11 +35,12 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkCheese = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -120,7 +121,7 @@
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.checkBox3);
             this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.chkCheese);
             this.groupBox2.Location = new System.Drawing.Point(349, 345);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(278, 148);
@@ -128,15 +129,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Choose your toppings";
             // 
-            // checkBox1
+            // chkCheese
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 22);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 20);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Cheese";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkCheese.AutoSize = true;
+            this.chkCheese.Location = new System.Drawing.Point(7, 22);
+            this.chkCheese.Name = "chkCheese";
+            this.chkCheese.Size = new System.Drawing.Size(77, 20);
+            this.chkCheese.TabIndex = 0;
+            this.chkCheese.Text = "Cheese";
+            this.chkCheese.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -178,11 +179,27 @@
             this.checkBox5.Text = "Green Pepper";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Cheese",
+            "Pepperoni",
+            "Sausage",
+            "Black Olive",
+            "Green Pepper"});
+            this.listBox1.Location = new System.Drawing.Point(651, 54);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(357, 324);
+            this.listBox1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 556);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -211,9 +228,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkCheese;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

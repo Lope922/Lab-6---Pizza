@@ -21,7 +21,8 @@ namespace Lab___6___Pizza
 
             //todo Whatever
 
-            
+            string topping = Convert.ToString(listBox1.SelectedIndex(0));
+            MessageBox.Show(listBox1.SelectedIndex[0]);
 
         }
     }
