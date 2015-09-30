@@ -58,12 +58,12 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(28, 10);
+            this.radioButton1.Location = new System.Drawing.Point(28, 19);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(79, 17);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Thick Crust";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -71,21 +71,21 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(28, 50);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(73, 17);
             this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Thin Crust";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(28, 108);
+            this.radioButton3.Location = new System.Drawing.Point(28, 86);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.Size = new System.Drawing.Size(86, 17);
             this.radioButton3.TabIndex = 4;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.Text = "Stuffed Crust";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // groupBox1
