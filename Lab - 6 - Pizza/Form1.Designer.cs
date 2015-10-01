@@ -35,7 +35,6 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
             this.picPepperoniOnly = new System.Windows.Forms.PictureBox();
             this.picPepperoniAndSausage = new System.Windows.Forms.PictureBox();
             this.picPepperoniAndBlackOlive = new System.Windows.Forms.PictureBox();
@@ -64,48 +63,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOlive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOliveAndGreenPepper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenPepper)).BeginInit();
-=======
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkCheese = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
->>>>>>> origin/template
             this.SuspendLayout();
             // 
             // picCheeseOnly
             // 
-<<<<<<< HEAD
             this.picCheeseOnly.Image = ((System.Drawing.Image)(resources.GetObject("picCheeseOnly.Image")));
-            this.picCheeseOnly.Location = new System.Drawing.Point(40, 71);
+            this.picCheeseOnly.Location = new System.Drawing.Point(53, 87);
+            this.picCheeseOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picCheeseOnly.Name = "picCheeseOnly";
-            this.picCheeseOnly.Size = new System.Drawing.Size(198, 178);
+            this.picCheeseOnly.Size = new System.Drawing.Size(264, 219);
             this.picCheeseOnly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCheeseOnly.TabIndex = 0;
             this.picCheeseOnly.TabStop = false;
-=======
-            this.pictureBox1.Location = new System.Drawing.Point(187, 70);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 219);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
->>>>>>> origin/template
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(37, 29);
-=======
-            this.label1.Location = new System.Drawing.Point(125, 33);
+            this.label1.Location = new System.Drawing.Point(49, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> origin/template
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 1;
@@ -161,13 +136,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-<<<<<<< HEAD
             // picPepperoniOnly
             // 
             this.picPepperoniOnly.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniOnly.Image")));
-            this.picPepperoniOnly.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniOnly.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniOnly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniOnly.Name = "picPepperoniOnly";
-            this.picPepperoniOnly.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniOnly.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniOnly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniOnly.TabIndex = 6;
             this.picPepperoniOnly.TabStop = false;
@@ -176,9 +151,10 @@
             // picPepperoniAndSausage
             // 
             this.picPepperoniAndSausage.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniAndSausage.Image")));
-            this.picPepperoniAndSausage.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniAndSausage.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniAndSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniAndSausage.Name = "picPepperoniAndSausage";
-            this.picPepperoniAndSausage.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniAndSausage.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniAndSausage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniAndSausage.TabIndex = 7;
             this.picPepperoniAndSausage.TabStop = false;
@@ -187,9 +163,10 @@
             // picPepperoniAndBlackOlive
             // 
             this.picPepperoniAndBlackOlive.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniAndBlackOlive.Image")));
-            this.picPepperoniAndBlackOlive.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniAndBlackOlive.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniAndBlackOlive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniAndBlackOlive.Name = "picPepperoniAndBlackOlive";
-            this.picPepperoniAndBlackOlive.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniAndBlackOlive.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniAndBlackOlive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniAndBlackOlive.TabIndex = 8;
             this.picPepperoniAndBlackOlive.TabStop = false;
@@ -198,9 +175,10 @@
             // picPepperoniAndGreenPepper
             // 
             this.picPepperoniAndGreenPepper.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniAndGreenPepper.Image")));
-            this.picPepperoniAndGreenPepper.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniAndGreenPepper.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniAndGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniAndGreenPepper.Name = "picPepperoniAndGreenPepper";
-            this.picPepperoniAndGreenPepper.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniAndGreenPepper.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniAndGreenPepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniAndGreenPepper.TabIndex = 9;
             this.picPepperoniAndGreenPepper.TabStop = false;
@@ -209,9 +187,10 @@
             // picPepperoniAndGreenPepperAndBlackOlive
             // 
             this.picPepperoniAndGreenPepperAndBlackOlive.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniAndGreenPepperAndBlackOlive.Image")));
-            this.picPepperoniAndGreenPepperAndBlackOlive.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniAndGreenPepperAndBlackOlive.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniAndGreenPepperAndBlackOlive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniAndGreenPepperAndBlackOlive.Name = "picPepperoniAndGreenPepperAndBlackOlive";
-            this.picPepperoniAndGreenPepperAndBlackOlive.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniAndGreenPepperAndBlackOlive.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniAndGreenPepperAndBlackOlive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniAndGreenPepperAndBlackOlive.TabIndex = 10;
             this.picPepperoniAndGreenPepperAndBlackOlive.TabStop = false;
@@ -220,9 +199,10 @@
             // picPepperoniAndSausageAndGreenPepperAndBlackOlive
             // 
             this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniAndSausageAndGreenPepperAndBlackOlive.Image")));
-            this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Location = new System.Drawing.Point(40, 71);
+            this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Location = new System.Drawing.Point(53, 87);
+            this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Name = "picPepperoniAndSausageAndGreenPepperAndBlackOlive";
-            this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Size = new System.Drawing.Size(198, 178);
+            this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.Size = new System.Drawing.Size(264, 219);
             this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.TabIndex = 11;
             this.picPepperoniAndSausageAndGreenPepperAndBlackOlive.TabStop = false;
@@ -231,9 +211,10 @@
             // picSausage
             // 
             this.picSausage.Image = ((System.Drawing.Image)(resources.GetObject("picSausage.Image")));
-            this.picSausage.Location = new System.Drawing.Point(40, 71);
+            this.picSausage.Location = new System.Drawing.Point(53, 87);
+            this.picSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSausage.Name = "picSausage";
-            this.picSausage.Size = new System.Drawing.Size(198, 178);
+            this.picSausage.Size = new System.Drawing.Size(264, 219);
             this.picSausage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSausage.TabIndex = 12;
             this.picSausage.TabStop = false;
@@ -242,9 +223,10 @@
             // picSausageAndBlackOlive
             // 
             this.picSausageAndBlackOlive.Image = ((System.Drawing.Image)(resources.GetObject("picSausageAndBlackOlive.Image")));
-            this.picSausageAndBlackOlive.Location = new System.Drawing.Point(40, 71);
+            this.picSausageAndBlackOlive.Location = new System.Drawing.Point(53, 87);
+            this.picSausageAndBlackOlive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSausageAndBlackOlive.Name = "picSausageAndBlackOlive";
-            this.picSausageAndBlackOlive.Size = new System.Drawing.Size(198, 178);
+            this.picSausageAndBlackOlive.Size = new System.Drawing.Size(264, 219);
             this.picSausageAndBlackOlive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSausageAndBlackOlive.TabIndex = 13;
             this.picSausageAndBlackOlive.TabStop = false;
@@ -253,9 +235,10 @@
             // picSausageAndGreenPepper
             // 
             this.picSausageAndGreenPepper.Image = ((System.Drawing.Image)(resources.GetObject("picSausageAndGreenPepper.Image")));
-            this.picSausageAndGreenPepper.Location = new System.Drawing.Point(40, 71);
+            this.picSausageAndGreenPepper.Location = new System.Drawing.Point(53, 87);
+            this.picSausageAndGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSausageAndGreenPepper.Name = "picSausageAndGreenPepper";
-            this.picSausageAndGreenPepper.Size = new System.Drawing.Size(198, 178);
+            this.picSausageAndGreenPepper.Size = new System.Drawing.Size(264, 219);
             this.picSausageAndGreenPepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSausageAndGreenPepper.TabIndex = 14;
             this.picSausageAndGreenPepper.TabStop = false;
@@ -264,9 +247,10 @@
             // picSausageAndBlackOliveAndGreenPepper
             // 
             this.picSausageAndBlackOliveAndGreenPepper.Image = ((System.Drawing.Image)(resources.GetObject("picSausageAndBlackOliveAndGreenPepper.Image")));
-            this.picSausageAndBlackOliveAndGreenPepper.Location = new System.Drawing.Point(40, 71);
+            this.picSausageAndBlackOliveAndGreenPepper.Location = new System.Drawing.Point(53, 87);
+            this.picSausageAndBlackOliveAndGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSausageAndBlackOliveAndGreenPepper.Name = "picSausageAndBlackOliveAndGreenPepper";
-            this.picSausageAndBlackOliveAndGreenPepper.Size = new System.Drawing.Size(198, 178);
+            this.picSausageAndBlackOliveAndGreenPepper.Size = new System.Drawing.Size(264, 219);
             this.picSausageAndBlackOliveAndGreenPepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSausageAndBlackOliveAndGreenPepper.TabIndex = 15;
             this.picSausageAndBlackOliveAndGreenPepper.TabStop = false;
@@ -275,9 +259,10 @@
             // picBlackOlive
             // 
             this.picBlackOlive.Image = ((System.Drawing.Image)(resources.GetObject("picBlackOlive.Image")));
-            this.picBlackOlive.Location = new System.Drawing.Point(40, 71);
+            this.picBlackOlive.Location = new System.Drawing.Point(53, 87);
+            this.picBlackOlive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBlackOlive.Name = "picBlackOlive";
-            this.picBlackOlive.Size = new System.Drawing.Size(198, 178);
+            this.picBlackOlive.Size = new System.Drawing.Size(264, 219);
             this.picBlackOlive.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBlackOlive.TabIndex = 16;
             this.picBlackOlive.TabStop = false;
@@ -286,9 +271,10 @@
             // picBlackOliveAndGreenPepper
             // 
             this.picBlackOliveAndGreenPepper.Image = ((System.Drawing.Image)(resources.GetObject("picBlackOliveAndGreenPepper.Image")));
-            this.picBlackOliveAndGreenPepper.Location = new System.Drawing.Point(40, 71);
+            this.picBlackOliveAndGreenPepper.Location = new System.Drawing.Point(56, 87);
+            this.picBlackOliveAndGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBlackOliveAndGreenPepper.Name = "picBlackOliveAndGreenPepper";
-            this.picBlackOliveAndGreenPepper.Size = new System.Drawing.Size(198, 178);
+            this.picBlackOliveAndGreenPepper.Size = new System.Drawing.Size(264, 219);
             this.picBlackOliveAndGreenPepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBlackOliveAndGreenPepper.TabIndex = 17;
             this.picBlackOliveAndGreenPepper.TabStop = false;
@@ -297,100 +283,20 @@
             // picGreenPepper
             // 
             this.picGreenPepper.Image = ((System.Drawing.Image)(resources.GetObject("picGreenPepper.Image")));
-            this.picGreenPepper.Location = new System.Drawing.Point(40, 71);
+            this.picGreenPepper.Location = new System.Drawing.Point(56, 87);
+            this.picGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picGreenPepper.Name = "picGreenPepper";
-            this.picGreenPepper.Size = new System.Drawing.Size(198, 178);
+            this.picGreenPepper.Size = new System.Drawing.Size(264, 219);
             this.picGreenPepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picGreenPepper.TabIndex = 18;
             this.picGreenPepper.TabStop = false;
             this.picGreenPepper.Visible = false;
-=======
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.chkCheese);
-            this.groupBox2.Location = new System.Drawing.Point(349, 345);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(278, 148);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Choose your toppings";
-            // 
-            // chkCheese
-            // 
-            this.chkCheese.AutoSize = true;
-            this.chkCheese.Location = new System.Drawing.Point(7, 22);
-            this.chkCheese.Name = "chkCheese";
-            this.chkCheese.Size = new System.Drawing.Size(77, 20);
-            this.chkCheese.TabIndex = 0;
-            this.chkCheese.Text = "Cheese";
-            this.chkCheese.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(7, 52);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(93, 20);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Pepperoni";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(7, 80);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(85, 20);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Sausage";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(117, 22);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(98, 20);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Black Olive";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(117, 53);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(115, 20);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Green Pepper";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
-            "Cheese",
-            "Pepperoni",
-            "Sausage",
-            "Black Olive",
-            "Green Pepper"});
-            this.listBox1.Location = new System.Drawing.Point(651, 54);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(357, 324);
-            this.listBox1.TabIndex = 7;
->>>>>>> origin/template
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(765, 452);
+            this.ClientSize = new System.Drawing.Size(1020, 556);
             this.Controls.Add(this.picGreenPepper);
             this.Controls.Add(this.picBlackOliveAndGreenPepper);
             this.Controls.Add(this.picBlackOlive);
@@ -407,21 +313,12 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picCheeseOnly);
-=======
-            this.ClientSize = new System.Drawing.Size(1020, 556);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
->>>>>>> origin/template
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picCheeseOnly)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniOnly)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniAndSausage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniAndBlackOlive)).EndInit();
@@ -435,10 +332,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOlive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOliveAndGreenPepper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenPepper)).EndInit();
-=======
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
->>>>>>> origin/template
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,7 +345,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.GroupBox groupBox1;
-<<<<<<< HEAD
         private System.Windows.Forms.PictureBox picPepperoniOnly;
         private System.Windows.Forms.PictureBox picPepperoniAndSausage;
         private System.Windows.Forms.PictureBox picPepperoniAndBlackOlive;
@@ -466,15 +358,6 @@
         private System.Windows.Forms.PictureBox picBlackOlive;
         private System.Windows.Forms.PictureBox picBlackOliveAndGreenPepper;
         private System.Windows.Forms.PictureBox picGreenPepper;
-=======
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox chkCheese;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.ListBox listBox1;
->>>>>>> origin/template
     }
 }
 
