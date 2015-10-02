@@ -34,7 +34,7 @@
             this.rdoThinCrust = new System.Windows.Forms.RadioButton();
             this.rdoStuffedCrust = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxToppings = new System.Windows.Forms.GroupBox();
             this.checkBoxGreenPepper = new System.Windows.Forms.CheckBox();
             this.chkBoxBlackOlive = new System.Windows.Forms.CheckBox();
             this.chkBoxSausage = new System.Windows.Forms.CheckBox();
@@ -44,7 +44,7 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxToppings.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -109,21 +109,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // groupBox2
+            // groupBoxToppings
             // 
-            this.groupBox2.Controls.Add(this.checkBoxGreenPepper);
-            this.groupBox2.Controls.Add(this.chkBoxBlackOlive);
-            this.groupBox2.Controls.Add(this.chkBoxSausage);
-            this.groupBox2.Controls.Add(this.chkBoxPepperoni);
-            this.groupBox2.Controls.Add(this.chkBoxCheese);
-            this.groupBox2.Location = new System.Drawing.Point(262, 280);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(208, 120);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Choose your toppings";
+            this.groupBoxToppings.Controls.Add(this.checkBoxGreenPepper);
+            this.groupBoxToppings.Controls.Add(this.chkBoxBlackOlive);
+            this.groupBoxToppings.Controls.Add(this.chkBoxSausage);
+            this.groupBoxToppings.Controls.Add(this.chkBoxPepperoni);
+            this.groupBoxToppings.Controls.Add(this.chkBoxCheese);
+            this.groupBoxToppings.Location = new System.Drawing.Point(262, 280);
+            this.groupBoxToppings.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxToppings.Name = "groupBoxToppings";
+            this.groupBoxToppings.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxToppings.Size = new System.Drawing.Size(208, 120);
+            this.groupBoxToppings.TabIndex = 6;
+            this.groupBoxToppings.TabStop = false;
+            this.groupBoxToppings.Text = "Choose your toppings";
             // 
             // checkBoxGreenPepper
             // 
@@ -179,13 +179,14 @@
             this.chkBoxCheese.TabIndex = 0;
             this.chkBoxCheese.Text = "Cheese";
             this.chkBoxCheese.UseVisualStyleBackColor = true;
+            
             // 
             // listBoxOrderBuilder
             // 
             this.listBoxOrderBuilder.FormattingEnabled = true;
-            this.listBoxOrderBuilder.Location = new System.Drawing.Point(491, 66);
+            this.listBoxOrderBuilder.Location = new System.Drawing.Point(444, 72);
             this.listBoxOrderBuilder.Name = "listBoxOrderBuilder";
-            this.listBoxOrderBuilder.Size = new System.Drawing.Size(120, 95);
+            this.listBoxOrderBuilder.Size = new System.Drawing.Size(271, 95);
             this.listBoxOrderBuilder.TabIndex = 7;
             // 
             // btnConfirm
@@ -205,18 +206,17 @@
             this.ClientSize = new System.Drawing.Size(765, 452);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.listBoxOrderBuilder);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBoxToppings);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxToppings.ResumeLayout(false);
+            this.groupBoxToppings.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,7 +230,7 @@
         private System.Windows.Forms.RadioButton rdoThinCrust;
         private System.Windows.Forms.RadioButton rdoStuffedCrust;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxToppings;
         private System.Windows.Forms.CheckBox chkBoxSausage;
         private System.Windows.Forms.CheckBox chkBoxPepperoni;
         private System.Windows.Forms.CheckBox chkBoxCheese;

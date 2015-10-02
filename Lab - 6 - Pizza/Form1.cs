@@ -22,26 +22,21 @@ namespace Lab___6___Pizza
         public Form1()
         {
             InitializeComponent();
+          
         }
     
 
         //BRAINSTORMING PIZZA STUCTURE FOR pizzaOrder;
         // STRING for the type of crust 
-        public struct PizzaOrder
+        private struct PizzaOrder
         {
-            string crust;
-            List<string> pizzaList;
-            List<string> toppingsList;
-            int price;
+         public string crust;
+          public   List<string> pizzaList;
+           public string toppingList;
+            
+           public int price;
 
-            public override string ToString()
-            {
-                return "Crust type: " + crust + "Toppings:" + toppingsList;
-            }
-
-           
-           
-
+        
             public void crustType(RadioButton crust1, RadioButton crust2, RadioButton crust3)
             {
                 if (crust1.Checked == true)
@@ -58,43 +53,65 @@ namespace Lab___6___Pizza
                 }
                 else MessageBox.Show("Please select a crust type");
             }
-            public void toppingsChoice(CheckBox chkbx1, CheckBox chkbox2, CheckBox chkbox3, CheckBox chkbox4, CheckBox chkbox5)
+
+            public void toppingsChoice(CheckBox chkbx1, CheckBox chkbox2, CheckBox chkbox3, CheckBox chkbox4, CheckBox chkbox5, List<string> toppingList)
             {
                 if (chkbx1.Checked == true)
                 {
-                    pizzaList.Add("Cheese");
+                    toppingList.Add("Cheese");
                 }
-                 if(chkbox2.Checked == true)
+                if (chkbox2.Checked == true)
                 {
-                    pizzaList.Add("Pepperoni");
+                    toppingList.Add("Pepperoni");
                 }
-                 if (chkbox3.Checked == true)
+                if (chkbox3.Checked == true)
                 {
-                    pizzaList.Add("Sausage");
+                    toppingList.Add("Sausage");
                 }
-                 if (chkbox4.Checked == true)
+                if (chkbox4.Checked == true)
                 {
-                    pizzaList.Add("Black Olives");
+                    toppingList.Add("Black Olives");
                 }
-                 if (chkbx1.Checked == true)
+                if (chkbx1.Checked == true)
                 {
-                    pizzaList.Add("Green Peppers");
+                    toppingList.Add("Green Peppers");
                 }
                 else
                 {
                     MessageBox.Show("Please select toppings for your pizza");
                 }
+            }
 
-            } 
-           
+            public string pizzaToppingsToString(List<string> pizzaToppingList)
+            {
+
+                int lengthOfList = pizzaToppingList.Count;
+
+                string pizzaToppings = "";
+      //          while (pizzaToppingList.Count != 0) ;
+        //        {
+                    for (int x = 0; x < lengthOfList; x++)
+                    {
+                        pizzaToppings += "" + pizzaToppingList.ElementAt(x) + "";
+                    }
+          //      }
+                return pizzaToppings;
+            }
+
+            
+
+            // overrides the tostring method to output info taken from form into meaninful strings
+            public override string ToString()
+            {
+                return "Crust type: " + crust + " Toppings: " + toppingList;
+            }
+ 
         }
-        
-
+       
             private void btnConfirm_Click(object sender, EventArgs e)
             {
                 // prompt the user to see if their selection is correct
-                DialogResult result = MessageBox.Show("Are you sure you want to place your order?", "Confirm", MessageBoxButtons.YesNo);
-
+                DialogResult result = MessageBox.Show("Have you selected all of your pizza options ?", "Confirm", MessageBoxButtons.YesNo);
 
                 if (result == DialogResult.Yes)
                 {
@@ -103,16 +120,27 @@ namespace Lab___6___Pizza
                     PizzaOrder pizza = new PizzaOrder();
                     
                     // also declare the toppings list and pizza order list 
-                    List<string> pt = new List<string>(); // pt pizza topping 
+                    List<string> pt = new List<string>();
                     List<string> pO = new List<string>();  // po pizza orer
 
+                    
+                    //List<string> toppingsList = pt;
 
-
+                   
+                    
+                    // get the crust type selected 
                     pizza.crustType(rdoThickCrust, rdoThinCrust, rdoStuffedCrust);
 
-                    pizza.toppingsChoice(chkBoxCheese,chkBoxPepperoni,chkBoxSausage,chkBoxBlackOlive,checkBoxGreenPepper);
+                    // get the toppings selected 
+                    pizza.toppingsChoice(chkBoxCheese,chkBoxPepperoni,chkBoxSausage,chkBoxBlackOlive,checkBoxGreenPepper,pt);
 
+                    pizza.toppingList = pizza.pizzaToppingsToString(pt); 
+
+                    // list the pizza to be ordered to the list box
                     listBoxOrderBuilder.Items.Add(pizza);
+
+                 
+
                 }
             }
                     // call the method to get the toppings and pass it the check boxes as well as the list to store the topping selections
