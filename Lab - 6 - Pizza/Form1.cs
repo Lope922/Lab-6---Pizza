@@ -29,17 +29,18 @@ namespace Lab___6___Pizza
         // STRING for the type of crust 
         public struct PizzaOrder
         {
-            string crust = "";
-            List<string> pizzaToppings;
+            string crust;
+            List<string> pizzaList;
+            List<string> toppingsList;
             int price;
 
             public override string ToString()
             {
-                return "Crust type: " + crust + "Toppings" + pizzaToppings;
+                return "Crust type: " + crust + "Toppings:" + toppingsList;
             }
 
-            // This initializes the new list as an empty list 
-            List<string> toppingsList = new List<string>();
+           
+           
 
             public void crustType(RadioButton crust1, RadioButton crust2, RadioButton crust3)
             {
@@ -61,23 +62,23 @@ namespace Lab___6___Pizza
             {
                 if (chkbx1.Checked == true)
                 {
-                    pizzaToppings.Add("Cheese");
+                    pizzaList.Add("Cheese");
                 }
                  if(chkbox2.Checked == true)
                 {
-                    pizzaToppings.Add("Pepperoni");
+                    pizzaList.Add("Pepperoni");
                 }
                  if (chkbox3.Checked == true)
                 {
-                    pizzaToppings.Add("Sausage");
+                    pizzaList.Add("Sausage");
                 }
                  if (chkbox4.Checked == true)
                 {
-                    pizzaToppings.Add("Black Olives");
+                    pizzaList.Add("Black Olives");
                 }
                  if (chkbx1.Checked == true)
                 {
-                    pizzaToppings.Add("Green Peppers");
+                    pizzaList.Add("Green Peppers");
                 }
                 else
                 {
@@ -98,7 +99,14 @@ namespace Lab___6___Pizza
                 if (result == DialogResult.Yes)
                 {
 
+                    // declare the pizza object and create a new instance of it. 
                     PizzaOrder pizza = new PizzaOrder();
+                    
+                    // also declare the toppings list and pizza order list 
+                    List<string> pt = new List<string>(); // pt pizza topping 
+                    List<string> pO = new List<string>();  // po pizza orer
+
+
 
                     pizza.crustType(rdoThickCrust, rdoThinCrust, rdoStuffedCrust);
 
@@ -155,10 +163,6 @@ namespace Lab___6___Pizza
                 }
 
             }
-
-
-
-
 
             // try and pull the infro from the selected toppings check boxes 
             //private List<string> GetToppings(CheckBox Cheese, CheckBox Pepperoni, CheckBox Sausage, CheckBox BlackOlives, CheckBox GreenPepper, List<string> toppingList)
