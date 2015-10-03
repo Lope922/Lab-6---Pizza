@@ -42,6 +42,10 @@
             this.chkBoxCheese = new System.Windows.Forms.CheckBox();
             this.listBoxOrderBuilder = new System.Windows.Forms.ListBox();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnClearToppings = new System.Windows.Forms.Button();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.comboBoxPizzaSize = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
@@ -49,7 +53,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(140, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(198, 178);
             this.pictureBox1.TabIndex = 0;
@@ -179,31 +183,75 @@
             this.chkBoxCheese.TabIndex = 0;
             this.chkBoxCheese.Text = "Cheese";
             this.chkBoxCheese.UseVisualStyleBackColor = true;
-            
             // 
             // listBoxOrderBuilder
             // 
             this.listBoxOrderBuilder.FormattingEnabled = true;
-            this.listBoxOrderBuilder.Location = new System.Drawing.Point(444, 72);
+            this.listBoxOrderBuilder.Location = new System.Drawing.Point(466, 75);
+            this.listBoxOrderBuilder.MultiColumn = true;
             this.listBoxOrderBuilder.Name = "listBoxOrderBuilder";
+            this.listBoxOrderBuilder.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.listBoxOrderBuilder.ScrollAlwaysVisible = true;
             this.listBoxOrderBuilder.Size = new System.Drawing.Size(271, 95);
             this.listBoxOrderBuilder.TabIndex = 7;
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(475, 316);
+            this.btnConfirm.Location = new System.Drawing.Point(488, 285);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(122, 23);
             this.btnConfirm.TabIndex = 8;
             this.btnConfirm.Text = "&Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
+            // btnClearToppings
+            // 
+            this.btnClearToppings.Location = new System.Drawing.Point(488, 323);
+            this.btnClearToppings.Name = "btnClearToppings";
+            this.btnClearToppings.Size = new System.Drawing.Size(122, 23);
+            this.btnClearToppings.TabIndex = 9;
+            this.btnClearToppings.Text = "Clear &Toppings";
+            this.btnClearToppings.UseVisualStyleBackColor = true;
+            this.btnClearToppings.Click += new System.EventHandler(this.btnClearToppings_Click);
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(562, 226);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(37, 13);
+            this.lblPrice.TabIndex = 10;
+            this.lblPrice.Text = "Total :";
+            // 
+            // comboBoxPizzaSize
+            // 
+            this.comboBoxPizzaSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPizzaSize.FormattingEnabled = true;
+            this.comboBoxPizzaSize.Location = new System.Drawing.Point(303, 108);
+            this.comboBoxPizzaSize.Name = "comboBoxPizzaSize";
+            this.comboBoxPizzaSize.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPizzaSize.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(300, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Select A Pizza Size";
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btnConfirm;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 452);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBoxPizzaSize);
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.btnClearToppings);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.listBoxOrderBuilder);
             this.Controls.Add(this.groupBoxToppings);
@@ -212,6 +260,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -238,6 +287,10 @@
         private System.Windows.Forms.CheckBox chkBoxBlackOlive;
         private System.Windows.Forms.ListBox listBoxOrderBuilder;
         private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btnClearToppings;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.ComboBox comboBoxPizzaSize;
+        private System.Windows.Forms.Label label3;
     }
 }
 
