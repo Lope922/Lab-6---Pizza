@@ -187,6 +187,7 @@
             // listBoxOrderBuilder
             // 
             this.listBoxOrderBuilder.FormattingEnabled = true;
+            this.listBoxOrderBuilder.HorizontalScrollbar = true;
             this.listBoxOrderBuilder.Location = new System.Drawing.Point(466, 75);
             this.listBoxOrderBuilder.MultiColumn = true;
             this.listBoxOrderBuilder.Name = "listBoxOrderBuilder";

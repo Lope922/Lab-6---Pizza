@@ -35,28 +35,35 @@ namespace Lab___6___Pizza
             public string toppingList;
 
             public List<string> pizzaList;
-            public int price;
+            public double price;
 
-            public void pizzaSize(ComboBox pizzaSizes, int price)
+            public double pizzaSize(ComboBox pizzaSizes, double price)
             {
-            if (pizzaSizes.SelectedIndex.Equals(0))
-            {
-                price = 5;
-                sizeOfPizza = "Small";
 
+                if (pizzaSizes.SelectedIndex.Equals(1))
+                {
+                    price = 6.00;
+                    sizeOfPizza = "Medium";
+                    return price;
+                }
+                else if (pizzaSizes.SelectedIndex.Equals(2))
+                {
+                    price = 7.00;
+                    sizeOfPizza = "Large";
+                    return price;
+                }
+                else if (pizzaSizes.SelectedIndex.Equals(0))
+                {
+                    price = 5.00;
+                    sizeOfPizza = "Small";
+                    return price;
+                }
+                else
+                {
+                    return price = 0.00;
+                }
             }
-            else if (pizzaSizes.SelectedIndex.Equals(1))
-            {
-                price = 6;
-                sizeOfPizza = "Medium";
-            }
-            else if (pizzaSizes.SelectedIndex.Equals(2))
-                price = 7;
-                sizeOfPizza = "Large";
-            }
-        
-
-
+           
             public void crustType(RadioButton crust1, RadioButton crust2, RadioButton crust3)
             {
                 if (crust1.Checked == true)
@@ -73,11 +80,12 @@ namespace Lab___6___Pizza
                 }
                 else MessageBox.Show("Please select a crust type");
             }
-            public void toppingsChoice(CheckBox chkbx1, CheckBox chkbox2, CheckBox chkbox3, CheckBox chkbox4, CheckBox chkbox5, List<string> toppingList)
+
+            public void toppingsChoice(CheckBox chkbox1, CheckBox chkbox2, CheckBox chkbox3, CheckBox chkbox4, CheckBox chkbox5, List<string> toppingList)
             {
                     {
 
-                        if (chkbx1.Checked == true)
+                        if (chkbox1.Checked == true)
                         {
                             toppingList.Add("Cheese");
                         }
@@ -93,7 +101,7 @@ namespace Lab___6___Pizza
                         {
                             toppingList.Add("Black Olives");
                         }
-                        if (chkbx5.Checked == true)
+                        if (chkbox5.Checked == true)
                         {
                             toppingList.Add("Green Peppers");
                         }
@@ -137,57 +145,49 @@ namespace Lab___6___Pizza
             bool toppingsTester = true;
             // prompt the user to see if their selection is correct
             DialogResult result = MessageBox.Show("Have you selected all of your pizza options ?", "Confirm", MessageBoxButtons.YesNo);
-
+            
+            if (comboBoxPizzaSize.SelectedIndex.Equals(-1))
+            {
+                MessageBox.Show("Please select your pizza size", "No Pizza Size Selected");
+            }
+            
             // try while the pizza toppings list count is not nothing then it can be added to the list 
 
             {
-                if (result == DialogResult.Yes && readToppings(toppingsTester) == true)
-                {    
+                if (result == DialogResult.Yes && readToppings(toppingsTester) == true && !comboBoxPizzaSize.SelectedIndex.Equals(-1))
+                {
                     {
-
-                        int priceOfPizza = 0 ;
-                        
                         // first test we run to see if the user has selected toppings. 
-                        
+
 
                         // declare the pizza object and create a new instance of it. 
                         PizzaOrder pizza = new PizzaOrder();
 
-                        pizza.price = priceOfPizza;
+                        // get the pizza size and set the price based on size
                         pizza.pizzaSize(comboBoxPizzaSize, pizza.price);
                         // also declare the toppings list and pizza order list 
                         List<string> pt = new List<string>(); // pizza toppings 
                         List<string> pO = new List<string>();  // po pizza orer
 
-
-                        //List<string> toppingsList = pt;
-
-
-
                         // get the crust type selected 
                         pizza.crustType(rdoThickCrust, rdoThinCrust, rdoStuffedCrust);
-
-
 
                         // get the toppings selected 
                         pizza.toppingsChoice(chkBoxCheese, chkBoxPepperoni, chkBoxSausage, chkBoxBlackOlive, checkBoxGreenPepper, pt);
 
+                        // convert each item in the pizza list to a single line of strings
                         pizza.toppingList = pizza.pizzaToppingsToString(pt);
 
                         // list the pizza to be ordered to the list box
                         listBoxOrderBuilder.Items.Add(pizza);
-
-                        
-                        lblPrice.Text = "Total : + " + pizza.price;
+                        // update the price 
+                        lblPrice.Text = "Total :" +  pizza.price;
 
                         ClearToppings();
-
                     }
-
                 }
             }
         }
-        
         
         // clears the checkboxes
         private void btnClearToppings_Click(object sender, EventArgs e)
@@ -203,25 +203,24 @@ namespace Lab___6___Pizza
             chkBoxSausage.Checked = false;
             chkBoxBlackOlive.Checked = false;
             checkBoxGreenPepper.Checked = false;
-               
         }
 
         // one way to try and do it
         private bool readToppings(bool boolVal)
         {
             if (chkBoxCheese.Checked == false && chkBoxPepperoni.Checked == false && chkBoxSausage.Checked == false && chkBoxBlackOlive.Checked == false && checkBoxGreenPepper.Checked == false)
-            
             {
-                MessageBox.Show("Please select your toppings","Error Topppings Missing");
-               
+                MessageBox.Show("Please select your toppings", "Error Topppings Missing");
                 return false;
-              }
+            }
+            
             else 
             {
                 return boolVal;
             }
         }
 
+        // when the form load add the values to the 
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -234,94 +233,4 @@ namespace Lab___6___Pizza
     }
 }
 
-        #region CodeImAfraidToDelete
-
-                //public string GetCrustType(RadioButton radioBtn1, RadioButton radioBtn2, RadioButton radioBtn3)
-            //{
-            //    string crustType = "none";
-            //    if (radioBtn1.Checked == true)
-            //    {
-            //        crustType = "Thick Crust";
-            //        return crustType;
-
-            //    }
-            //    else if (radioBtn2.Checked == true)
-            //    {
-            //        crustType = "Thin Crust";
-            //        return crustType;
-            //    }
-            //    else if (radioBtn3.Checked == true)
-            //    {
-            //        crustType = "Stuffed Crust";
-            //        return crustType;
-            //    }
-            //    else
-            //    {
-            //        return crustType;
-            //    }
-
-        // call the method to get the toppings and pass it the check boxes as well as the list to store the topping selections
-        //       GetToppings(chkBoxCheese, chkBoxPepperoni, chkBoxSausage, chkBoxBlackOlive, checkBoxGreenPepper, toppingsList);
-
-        //     GetToppings(chkBoxCheese, chkBoxPepperoni, chkBoxSausage, chkBoxBlackOlive, checkBoxGreenPepper, toppingsList);
-
-        // add the crust to the listbox
-        //   listBoxOrderBuilder.Items.Add(GetCrustType(rdoThickCrust, rdoThinCrust, rdoStuffedCrust));
-
-        // add the toppings to the list box 
-        //listBoxOrderBuilder.Items.Add(GetToppings(chkBoxCheese, chkBoxPepperoni, chkBoxSausage, chkBoxBlackOlive, checkBoxGreenPepper, toppingsList));
-
-
-        //need to find a way to add the toppings to the list and test to make sure they go to the right pizza order. 
-        // add each item in the toppings list to the list box 
-
-        // {
-
-        // }
-        // }
-
-        //}
-
-
-        // try and pull the infro from the selected toppings check boxes 
-            //private List<string> GetToppings(CheckBox Cheese, CheckBox Pepperoni, CheckBox Sausage, CheckBox BlackOlives, CheckBox GreenPepper, List<string> toppingList)
-            //{
-            //    if (Cheese.Checked == true)
-            //    {
-            //        toppingList.Add("Cheese");
-            //        return toppingsList;
-            //    }
-
-
-            //    else if (Pepperoni.Checked == true)
-            //    {
-            //        toppingList.Add("Pepperoni");
-            //        return toppingsList;
-            //    }
-
-            //    else if (Sausage.Checked == true)
-            //    {
-            //        toppingList.Add("Sausage");
-            //        return toppingsList;
-            //    }
-
-            //    else if (BlackOlives.Checked == true)
-            //    {
-            //        toppingList.Add("Black Olives");
-            //        return toppingsList;
-            //    }
-
-            //    else if (GreenPepper.Checked == true)
-            //    {
-            //        toppingList.Add("Green Peppers");
-            //        return toppingsList;
-            //    }
-
-            //    else
-            //    {
-            //        return toppingsList;
-        //    }
-        #endregion
-    
-        
-
+       
