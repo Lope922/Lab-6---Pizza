@@ -63,6 +63,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOlive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOliveAndGreenPepper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenPepper)).BeginInit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkCheese = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // picCheeseOnly
@@ -75,12 +85,18 @@
             this.picCheeseOnly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCheeseOnly.TabIndex = 0;
             this.picCheeseOnly.TabStop = false;
+
+            this.pictureBox1.Location = new System.Drawing.Point(187, 70);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 219);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(37, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 1;
@@ -136,6 +152,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+
             // picPepperoniOnly
             // 
             this.picPepperoniOnly.Image = ((System.Drawing.Image)(resources.GetObject("picPepperoniOnly.Image")));
@@ -291,12 +308,91 @@
             this.picGreenPepper.TabIndex = 18;
             this.picGreenPepper.TabStop = false;
             this.picGreenPepper.Visible = false;
+
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkBox5);
+            this.groupBox2.Controls.Add(this.checkBox4);
+            this.groupBox2.Controls.Add(this.checkBox3);
+            this.groupBox2.Controls.Add(this.checkBox2);
+            this.groupBox2.Controls.Add(this.chkCheese);
+            this.groupBox2.Location = new System.Drawing.Point(349, 345);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(278, 148);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Choose your toppings";
+            // 
+            // chkCheese
+            // 
+            this.chkCheese.AutoSize = true;
+            this.chkCheese.Location = new System.Drawing.Point(7, 22);
+            this.chkCheese.Name = "chkCheese";
+            this.chkCheese.Size = new System.Drawing.Size(77, 20);
+            this.chkCheese.TabIndex = 0;
+            this.chkCheese.Text = "Cheese";
+            this.chkCheese.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(7, 52);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(93, 20);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Pepperoni";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(7, 80);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(85, 20);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Sausage";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(117, 22);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(98, 20);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Black Olive";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(117, 53);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(115, 20);
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Text = "Green Pepper";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Cheese",
+            "Pepperoni",
+            "Sausage",
+            "Black Olive",
+            "Green Pepper"});
+            this.listBox1.Location = new System.Drawing.Point(651, 54);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(357, 324);
+            this.listBox1.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 556);
+            this.ClientSize = new System.Drawing.Size(765, 452);
             this.Controls.Add(this.picGreenPepper);
             this.Controls.Add(this.picBlackOliveAndGreenPepper);
             this.Controls.Add(this.picBlackOlive);
@@ -313,12 +409,12 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picCheeseOnly);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picCheeseOnly)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniOnly)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniAndSausage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPepperoniAndBlackOlive)).EndInit();
@@ -332,6 +428,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOlive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlackOliveAndGreenPepper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenPepper)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,6 +457,15 @@
         private System.Windows.Forms.PictureBox picBlackOlive;
         private System.Windows.Forms.PictureBox picBlackOliveAndGreenPepper;
         private System.Windows.Forms.PictureBox picGreenPepper;
+
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkCheese;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.ListBox listBox1;
+
     }
 }
 
